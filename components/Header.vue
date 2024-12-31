@@ -2,8 +2,7 @@
   <div>
     <!--  Navbar -->
     <nav
-      class="navbar navbar-expand-lg navbar-light bg-transparent position-fixed w-100"
-    >
+      class="navbar navbar-expand-lg navbar-light bg-secondary position-fixed w-100">
       <div class="container">
         <a class="navbar-brand" href="#hero">
           <img
@@ -31,22 +30,23 @@
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="berita">Berita</a>
+              <NuxtLink to="/berita" class="nav-link active"aria-current="page" href="/berita/index">Berita</NuxtLink>
+              
             </li>
 
 
             <!-- Dropdown Profil -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/propil"id="navbarDropdownEkskul" role="button"
+              <a class="nav-link dropdown-toggle" href="/profil"id="navbarDropdownEkskul" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownProfil" id="navbarDropdownProfil">
                 <li>
-                  <nuxt-link to="/propil/sejarah" class="dropdown-item">
+                  <nuxt-link to="/profil/sejarah" class="dropdown-item">
                     Sejarah
                   </nuxt-link>
                 </li>
                 <li>
-                  <nuxt-link to="/propil/Visi-Misi" class="dropdown-item">
+                  <nuxt-link to="/profil/Visi-Misi" class="dropdown-item">
                     Visi & Misi
                   </nuxt-link>
                 </li>
@@ -59,7 +59,7 @@
                 Kurikulum
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownEkskul" id="navbarDropdownEkskul">
-                <li><a class="dropdown-item" href="kurikulum/Kompetensi-Keahlian">Kompetensi Keahlian</a></li>
+                <li><a class="dropdown-item" href="kurikulum/jurusan">Kompetensi Keahlian</a></li>
                 <!-- Tambahkan ekstrakurikuler lainnya sesuai kebutuhan -->
               </ul>
             </li>
@@ -78,6 +78,7 @@
 
 <script>
 export default {};
+
 </script>
 
 <style>
@@ -87,7 +88,7 @@ export default {};
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f3fff4;
+  background-color: #ffffff;
 }
 /* Nav Fixed on Scroll */
 

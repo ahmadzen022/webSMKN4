@@ -1,7 +1,7 @@
 <template>
   <div class="container ">
     <h1 class="text-center">Berita Terbaru</h1>
-    <div class="row pt-5">
+    <div class="row pt-">
       <!-- Berita pertama di kiri -->
       <div class="col-md-6 mb-3">
         <div v-for="(berita, index) in beritaListkiri" :key="index" class="card mb-3 shadow-sm berita-card">

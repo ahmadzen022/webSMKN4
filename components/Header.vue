@@ -37,7 +37,7 @@
 
             <!-- Dropdown Profil -->
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="/profil"id="navbarDropdownEkskul" role="button"
+              <a class="nav-link dropdown-toggle" href="#profil"id="navbarDropdownEkskul" role="button"
                 data-bs-toggle="dropdown" aria-expanded="false">Profile</a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownProfil" id="navbarDropdownProfil">
                 <li>
@@ -52,22 +52,15 @@
                 </li>
               </ul>
             </li>
-            <!-- Dropdown kurikulum -->
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="kurikulum" id="navbarDropdownEkskul" role="button"
-                data-bs-toggle="dropdown" aria-expanded="false">
-                Kurikulum
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownEkskul" id="navbarDropdownEkskul">
-                <li><a class="dropdown-item" href="kurikulum/jurusan">Kompetensi Keahlian</a></li>
-                <!-- Tambahkan ekstrakurikuler lainnya sesuai kebutuhan -->
-              </ul>
+            <!-- kejuruan -->
+            <li class="nav-item">
+              <NuxtLink  to="/kejuruan/jurusan" class="nav-link active"aria-current="page" href="">Kejuruan</NuxtLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Galeri">Ekstrakurikuler</a>
+              <NuxtLink to="/eks/eskul" class="nav-link active"aria-current="page" href="">Ekskul</NuxtLink>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Galeri">Galeri</a>
+              <NuxtLink to="/galeriSekolah/galeri" class="nav-link active"aria-current="page" href="">Galeri</NuxtLink>
             </li>
           </ul>
         </div>
